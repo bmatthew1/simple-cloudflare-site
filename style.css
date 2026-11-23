@@ -100,3 +100,44 @@ footer {
   color: var(--muted);
   font-size: 0.875rem;
 }
+
+/* Links Section */
+#links ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+#links li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.9rem 1.25rem;
+  color: var(--text);
+  font-weight: 500;
+  text-decoration: none;
+  transition: border-color 0.15s ease, transform 0.15s ease, color 0.15s ease;
+}
+
+#links li a::after {
+  content: "↗";
+  color: var(--muted);
+  font-size: 0.95rem;
+  transition: transform 0.15s ease, color 0.15s ease;
+}
+
+#links li a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  text-decoration: none;
+  transform: translateX(3px);
+}
+
+#links li a:hover::after {
+  color: var(--accent);
+  transform: translate(2px, -2px);
+}
