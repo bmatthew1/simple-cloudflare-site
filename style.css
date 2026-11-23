@@ -1,0 +1,102 @@
+:root {
+  --bg: #ffffff;
+  --text: #1a1a1a;
+  --muted: #595959;
+  --accent: #0066cc;
+  --border: #e5e5e5;
+  --card-bg: #f9f9fb;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111315;
+    --text: #eceef0;
+    --muted: #9ba1a6;
+    --accent: #52a8ff;
+    --border: #26292b;
+    --card-bg: #181a1d;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 3rem 1.25rem;
+}
+
+header {
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+h1 {
+  font-size: 1.85rem;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.4rem;
+}
+
+.subtitle {
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+nav {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1.25rem;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.1rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.25rem;
+}
+
+.card p {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+footer {
+  margin-top: 3rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.875rem;
+}
